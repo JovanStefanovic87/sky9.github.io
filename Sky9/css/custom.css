@@ -1,0 +1,28 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+main {
+  display: block;
+  position: relative;
+}
+
+section {
+  display: block;
+  position: relative;
+}
+
+input[type='button'] {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+/*# sourceMappingURL=custom.css.map */
