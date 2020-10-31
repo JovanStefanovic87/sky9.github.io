@@ -1011,6 +1011,18 @@ footer .text-bubble p {
   color: white;
 }
 
+@media only screen and (max-width: 600px) {
+  .menu .menu_bar {
+    width: 100vw;
+    height: auto;
+    top: 34vh;
+    left: 0;
+  }
+  .menu .menu_bar ul li a {
+    font-size: 4vmax;
+  }
+}
+
 /****************Menu end****************/
 /****************Popup start****************/
 form {
@@ -1072,6 +1084,13 @@ form input[type='text']:focus {
   border: 0.15vw solid black;
 }
 
+@media only screen and (max-width: 600px) {
+  form input[type='text'] {
+    font-size: 1.5vw;
+    letter-spacing: 0.16vw;
+  }
+}
+
 form input[type='text']::-webkit-input-placeholder {
   color: #cdcdcd;
 }
@@ -1109,6 +1128,13 @@ form textarea {
 
 form textarea:focus {
   border: 0.15vw solid black;
+}
+
+@media only screen and (max-width: 600px) {
+  form textarea {
+    font-size: 1.5vw;
+    letter-spacing: 0.16vw;
+  }
 }
 
 form textarea::-webkit-input-placeholder {
@@ -1157,15 +1183,125 @@ form input[type='button']:active {
 
 form .location {
   position: absolute;
-  margin: 1.14vw 0 0 2.3vw;
+  width: 1.2vw;
+  margin: 1.05vw 0 0 2.3vw;
   opacity: 0.5;
   z-index: 300;
 }
 
 form #close {
   position: absolute;
+  width: 1vw;
   top: 1.4vw;
   right: 1.3vw;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    display: none;
+    width: 54.687vw;
+    height: 65vw;
+    left: 23.43vw;
+    top: calc(50vh - 40vw);
+  }
+  form:before {
+    width: 56.9vw;
+    height: 67.45vw;
+    margin: -1.3vw 0 0 -1.1vw;
+  }
+  form h1 {
+    margin: 2.1vw 0 3.2vw 0;
+    font-size: 5vw;
+  }
+  form p {
+    position: relative;
+    margin: 1.75vw 0 1.31vw 0;
+    font-size: 2.5vw;
+  }
+  form input[type='text'] {
+    display: block;
+    position: relative;
+    width: 92%;
+    left: 4%;
+    font-size: 0.829vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08vw;
+    border-radius: 0.25vw;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    color: #878686;
+    background-color: #f6f6f6;
+    height: 5vw;
+  }
+  form input[type='text']:focus {
+    border: 0.15vw solid black;
+  }
+}
+
+@media only screen and (max-width: 600px) and (max-width: 600px) {
+  form input[type='text'] {
+    font-size: 1.5vw;
+    letter-spacing: 0.16vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  form textarea {
+    display: block;
+    position: relative;
+    width: 92%;
+    left: 4%;
+    font-size: 0.829vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08vw;
+    border-radius: 0.25vw;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    color: #878686;
+    background-color: #f6f6f6;
+    height: 16vw;
+    margin-bottom: 2.9vw;
+  }
+  form textarea:focus {
+    border: 0.15vw solid black;
+  }
+}
+
+@media only screen and (max-width: 600px) and (max-width: 600px) {
+  form textarea {
+    font-size: 1.5vw;
+    letter-spacing: 0.16vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  form input[type='button'] {
+    width: 18vw;
+    height: 6vw;
+    margin: 0 0 2.05vw calc(50% - 9vw);
+    font-size: 2.5vw;
+  }
+  form input[type='button']:hover {
+    font-size: 2.2vw;
+  }
+  form input[type='button']:active {
+    -webkit-box-shadow: 1px 1px 2px 4px rgba(0, 0, 0, 0.7) inset;
+            box-shadow: 1px 1px 2px 4px rgba(0, 0, 0, 0.7) inset;
+    font-size: 2.2vw;
+  }
+  form .location {
+    width: 1.2vw;
+    margin: 1.7vw 0 0 3.2vw;
+  }
+  form #close {
+    width: 2.5vw;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  form {
+    top: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

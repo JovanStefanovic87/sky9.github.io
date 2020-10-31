@@ -30,7 +30,7 @@ $base_font_clr: rgb(96, 96, 96);
 $base_orange_clr: orange;
 $transition_stretch: cubic-bezier(1, -0.8, 0.3, 2);
 $transition_bounce: cubic-bezier(0, 1.35, 0, 0.95);
-$title_shadow: 0 5px 0 rgba(0, 0, 0, 0.19);
+$title_shadow: 0 0.4vw 0 rgba(0, 0, 0, 0.19);
 $portfolio_bg: #051554;
 $f_input_bg: #f6f6f6;
 $f_input_placeholder_bg: #cdcdcd;
@@ -66,5 +66,9 @@ $input_padding_right: 2.4vw;
 	background-color: $f_input_bg;
 	&:focus {
 		border: 0.15vw solid rgba(0, 0, 0, 1);
+	}
+	@media only screen and (max-width: 600px) {
+		font-size: 1.5vw;
+		letter-spacing: 0.16vw;
 	}
 }

@@ -826,6 +826,23 @@ footer {
 			}
 		}
 	}
+	@media only screen and (max-width: 600px) {
+		.menu_bar {
+			width: 100vw;
+			height: auto;
+			top: 34vh;
+			left: 0;
+			ul {
+				li {
+					a {
+						font: {
+							size: 4vmax;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 /****************Menu end****************/
 
@@ -910,15 +927,75 @@ form {
 
 	.location {
 		position: absolute;
-		margin: 1.14vw 0 0 2.3vw;
+		width: 1.2vw;
+		margin: 1.05vw 0 0 2.3vw;
 		opacity: 0.5;
 		z-index: 300;
 	}
 
 	#close {
 		position: absolute;
+		width: 1vw;
 		top: 1.4vw;
 		right: 1.3vw;
 		cursor: pointer;
+	}
+	@media only screen and (max-width: 600px) /*,
+		only screen and (max-height: 400px) */ {
+		display: none;
+		width: 54.687vw;
+		height: 65vw;
+		left: 23.43vw;
+		top: calc(50vh - 40vw);
+		&:before {
+			width: 56.9vw;
+			height: 67.45vw;
+			margin: -1.3vw 0 0 -1.1vw;
+		}
+		h1 {
+			margin: 2.1vw 0 3.2vw 0;
+			font-size: 5vw;
+		}
+		p {
+			position: relative;
+			margin: 1.75vw 0 1.31vw 0;
+			font: {
+				size: 2.5vw;
+			}
+		}
+		input[type='text'] {
+			@include f_input;
+			height: 5vw;
+		}
+		textarea {
+			@include f_input;
+			height: 16vw;
+			margin-bottom: 2.9vw;
+		}
+		input[type='button'] {
+			width: 18vw;
+			height: 6vw;
+			margin: 0 0 2.05vw calc(50% - 9vw);
+			font: {
+				size: 2.5vw;
+			}
+			&:hover {
+				font-size: 2.2vw;
+			}
+			&:active {
+				box-shadow: $border_active_shadow;
+				font-size: 2.2vw;
+			}
+		}
+		.location {
+			width: 1.2vw;
+			margin: 1.7vw 0 0 3.2vw;
+		}
+		#close {
+			width: 2.5vw;
+		}
+	}
+	@media only screen and (max-height: 400px) {
+		top: 0;
 	}
 }
