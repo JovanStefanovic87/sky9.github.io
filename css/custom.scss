@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	text-decoration: none;
+	list-style: none;
+}
+
+main {
+	display: block;
+	position: relative;
+}
+
+section {
+	display: block;
+	position: relative;
+}
+
+input[type='button'] {
+	cursor: pointer;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+$base_font_clr: rgb(96, 96, 96);
+$base_orange_clr: orange;
+$transition_stretch: cubic-bezier(1, -0.8, 0.3, 2);
+$transition_bounce: cubic-bezier(0, 1.35, 0, 0.95);
+$title_shadow: 0 5px 0 rgba(0, 0, 0, 0.19);
+$portfolio_bg: #051554;
+$f_input_bg: #f6f6f6;
+$f_input_placeholder_bg: #cdcdcd;
+$wireframe_hover_bg: rgb(255, 178, 53);
+$border_active_shadow: 1px 1px 2px 4px rgba(0, 0, 0, 0.7) inset;
+
+@mixin f_input {
+	display: block;
+	position: relative;
+	width: 92%;
+	left: 25px;
+	margin-right: -25px;
+	transform: translate(-25px -25px);
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 16px;
+	letter-spacing: 1.6px;
+	border-radius: 5px;
+	border: 2px solid rgba(0, 0, 0, 0.15);
+	color: #878686;
+	background-color: $f_input_bg;
+	&:focus {
+		border: 2px solid rgba(0, 0, 0, 1);
+	}
+}
